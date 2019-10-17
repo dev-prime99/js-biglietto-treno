@@ -7,8 +7,42 @@
   </head>
   <body>
 
-    
+    <div class="container flex">
 
+      <div class="info">
+        <h1>Calcola il costo del tuo viaggio</h1>
+        <p>Sconti per per minorenni e over 65.</p>
+        <h2>Inserisci i dati e scoprilo</h2>
+      </div>
+
+      <div class="form">
+        <div class="km flex">
+          <h3>Numero di Km:</h3>
+          <input type="text" name="km" id="km" placeholder="Inserisci il numero di km">
+        </div>
+
+        <div class="eta flex">
+          <h3>La tua età:</h3>
+          <input type="text" name="eta" id="eta" placeholder="Inserisci la tua età">
+        </div>
+
+        <button type="button" name="button" id="button" onclick="calcolo()">Calcola</button>
+
+        <div class="finale">
+
+          <div class="sconto flex">
+            <h3>Sconto di:</h3>
+            <h4 id="sconto_">Nessun Risultato</h4>
+          </div>
+
+          <div class="prezzo flex">
+            <h3>Prezzo finale:</h3>
+            <h4 id="prezzo_">Nessun Risultato</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" src="assets/js/main.js">
 
