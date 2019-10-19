@@ -7,12 +7,12 @@
   </head>
   <body>
 
-    <div class="container flex">
+    <div class="container flex" id="normal">
 
       <div class="info">
         <h1>Calcola il costo del tuo viaggio</h1>
         <p>Sconti per minorenni e over 65.</p>
-        <h2>Inserisci i dati e scoprilo</h2>
+        <h2 id="h2">Inserisci i dati e scoprilo</h2>
       </div>
 
       <div class="form">
@@ -42,6 +42,12 @@
 
         </div>
       </div>
+    </div>
+
+    <div id="box">
+      <h3>ERRORE!</h3>
+      <h2>Riprova ad reinserire i campi con un valore numerico</h2>
+      <button type="button" name="button" id="ok" onclick="ritorno()">OK</button>
     </div>
 
     <script type="text/javascript" src="assets/js/main.js">

@@ -28,14 +28,17 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 0px);
+  position: relative;
 }
 
 .container{
   width: 70%;
   height: 400px;
-  margin: auto;
-  margin-top: 100px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0 50px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -58,7 +61,7 @@ p{
   font-style: italic;
 }
 
-h2{
+.info h2{
   margin-top: 10px;
   padding: 5px 0;
   width: 100%;
@@ -86,7 +89,7 @@ h2{
   margin: 10px 0;
 }
 
-h3{
+.form h3{
   text-align: left;
   margin-left: 40px;
   color: #ffffff;
@@ -141,4 +144,38 @@ button:hover{
 h4{
   font-size: 13px;
   text-align: right;
+}
+
+#box{
+  width: 70%;
+  height: 400px;
+  padding: 0 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  flex-direction: column;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  display: none;
+}
+
+#box h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+#box button{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+#box h3{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  font-size: 60px;
+  color: #bf1a1a;
+  text-align: center;
+  text-decoration: underline;
 }
